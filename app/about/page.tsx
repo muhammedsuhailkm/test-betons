@@ -97,6 +97,94 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Leadership & Commitment Section */}
+      <section className="w-full bg-[#fcfcfc] dark:bg-neutral-950/20 py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Leaders Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 max-w-4xl mx-auto">
+            {/* GM */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="relative w-full aspect-[4/5] rounded-[32px] overflow-hidden mb-6 shadow-md border border-neutral-200/50 dark:border-neutral-800/50 bg-neutral-100 dark:bg-neutral-900">
+                <Image
+                  src="/GM.jpeg"
+                  alt="GM - Mirshadali chundanveetil"
+                  fill
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 450px"
+                  priority
+                />
+              </div>
+              <p className="text-xs md:text-sm tracking-[0.2em] font-semibold text-neutral-500 dark:text-neutral-400 uppercase mb-2">
+                GENERAL MANAGER
+              </p>
+              <h3
+                className={`text-2xl md:text-3xl text-black dark:text-white font-medium ${playfair.className}`}
+              >
+                Mirshadali Chundanveetil
+              </h3>
+            </div>
+
+            {/* CEO */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="relative w-full aspect-[4/5] rounded-[32px] overflow-hidden mb-6 shadow-md border border-neutral-200/50 dark:border-neutral-800/50 bg-neutral-100 dark:bg-neutral-900">
+                <Image
+                  src="/CEO.jpeg"
+                  alt="CEO - Salsabeel"
+                  fill
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 450px"
+                  priority
+                />
+              </div>
+              <p className="text-xs md:text-sm tracking-[0.2em] font-semibold text-neutral-500 dark:text-neutral-400 uppercase mb-2">
+                CEO
+              </p>
+              <h3
+                className={`text-2xl md:text-3xl text-black dark:text-white font-medium ${playfair.className}`}
+              >
+                Salsabeel
+              </h3>
+            </div>
+          </div>
+
+          {/* Commitment Section */}
+          <div className="max-w-4xl mx-auto mt-20 pt-16 border-t border-border/40 text-center">
+            <h2
+              className={`text-3xl md:text-4xl lg:text-5xl text-black dark:text-white mb-8 ${playfair.className}`}
+            >
+              Our Commitment
+            </h2>
+            <div className="space-y-6 text-base md:text-lg text-neutral-800 dark:text-neutral-100 leading-relaxed font-normal">
+              <p>
+                At Betons Businessmen Services LLC, we believe that business
+                success is built on trust, transparency, and long-term
+                relationships—not just transactions.
+              </p>
+              <p>
+                Our goal is not to maximize profits through service sales, but
+                to provide genuine, honest, and transparent guidance that helps
+                entrepreneurs and businesses make informed decisions. We take
+                the time to understand each client's unique requirements and
+                recommend solutions that truly add value.
+              </p>
+              <p>
+                We measure our success by the satisfaction of our clients, the
+                relationships we build, and the referrals we earn through
+                exceptional service. Whether you are starting a new business,
+                expanding operations, or navigating regulatory requirements, our
+                team is committed to supporting you with integrity,
+                professionalism, and personalized attention.
+              </p>
+              <p className="font-semibold text-black dark:text-white">
+                Your growth is our priority, and your trust is our greatest
+                achievement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* New 'Who Are We' Section */}
       <div className="w-full bg-white dark:bg-background pt-32 pb-8 px-6 flex flex-col items-center text-center border-t border-border/40">
         {/* Top Label */}
@@ -247,7 +335,9 @@ const AboutPage = () => {
 
           {/* Right Content */}
           <div className="hidden md:flex flex-col items-end text-white text-right transition-transform duration-700 ease-out group-hover:-translate-y-2 delay-100">
-            <h2 className="text-6xl lg:text-7xl font-light drop-shadow-md">20+</h2>
+            <h2 className="text-6xl lg:text-7xl font-light drop-shadow-md">
+              20+
+            </h2>
             <p className="mt-4 max-w-sm text-lg text-white/80 leading-relaxed drop-shadow-sm">
               Proven track records, we're trusted by startups for client-centric
               strategy, and flawless execution.
@@ -266,10 +356,10 @@ const AboutPage = () => {
           </h2>
           <ul className="space-y-4 text-[17px] text-gray-800 dark:text-gray-300 list-disc pl-6 leading-[1.8] marker:text-black dark:marker:text-white">
             <li>
-              Showing a definite concern in the business issues and problems that
-              are challenging our clients and working closely with them to solve
-              these problems or any other business dilemma by developing and
-              implementing inspired solutions.
+              Showing a definite concern in the business issues and problems
+              that are challenging our clients and working closely with them to
+              solve these problems or any other business dilemma by developing
+              and implementing inspired solutions.
             </li>
             <li>
               Developing long-term valuable business relationships with our
